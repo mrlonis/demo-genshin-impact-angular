@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeModule } from './home';
 
 @NgModule({
-  declarations: [HomeComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, RouterModule],
-  exports: [HomeComponent],
+  declarations: [],
+  imports: [BrowserModule, BrowserAnimationsModule, HomeModule],
+  exports: [BrowserModule, HomeModule],
 })
 export class CoreModule {}
