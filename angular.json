@@ -114,7 +114,7 @@
         "storybook": {
           "builder": "@storybook/angular:start-storybook",
           "options": {
-            "browserTarget": "demo-genshin-impact-angular:build",
+            "browserTarget": "demo-genshin-impact-angular:build:production",
             "port": 6006
           }
         },

@@ -16,34 +16,29 @@ export default class ButtonComponent {
   /**
    * Is this the principal call to action on the page?
    */
-  @Input()
-  primary = false;
+  @Input() primary = false;
 
   /**
    * What background color to use
    */
-  @Input()
-  backgroundColor?: string;
+  @Input() backgroundColor?: string;
 
   /**
    * How large should the button be?
    */
-  @Input()
-  size: 'small' | 'medium' | 'large' = 'medium';
+  @Input() size: 'small' | 'medium' | 'large' = 'medium';
 
   /**
    * Button contents
    *
    * @required
    */
-  @Input()
-  label = 'Button';
+  @Input() label = 'Button';
 
   /**
    * Optional click handler
    */
-  @Output()
-  onClick = new EventEmitter<Event>();
+  @Output() onClick = new EventEmitter<Event>();
 
   public get classes(): string[] {
     const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';
