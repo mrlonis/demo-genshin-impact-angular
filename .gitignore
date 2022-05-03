@@ -44,3 +44,7 @@ Thumbs.db
 # Folders
 /node_modules/
 /junit/
+/storybook-static/
+
+# Files
+/documentation.json
