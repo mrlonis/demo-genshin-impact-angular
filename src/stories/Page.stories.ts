@@ -1,7 +1,6 @@
-import { moduleMetadata, Story, Meta } from '@storybook/angular';
-import { within, userEvent } from '@storybook/testing-library';
 import { CommonModule } from '@angular/common';
-
+import { Meta, moduleMetadata, Story } from '@storybook/angular';
+import { userEvent, within } from '@storybook/testing-library';
 import Button from './button.component';
 import Header from './header.component';
 import Page from './page.component';
@@ -31,6 +30,8 @@ export const LoggedOut = Template.bind({});
 export const LoggedIn = Template.bind({});
 LoggedIn.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
+  // eslint-disable-next-line @typescript-eslint/await-thenable
   const loginButton = await canvas.getByRole('button', { name: /Log in/i });
+  // eslint-disable-next-line @typescript-eslint/await-thenable
   await userEvent.click(loginButton);
 };

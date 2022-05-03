@@ -1,7 +1,7 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'storybook-button',
+  selector: 'mrlonis-storybook-button',
   template: ` <button
     type="button"
     (click)="onClick.emit($event)"

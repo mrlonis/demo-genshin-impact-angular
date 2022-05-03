@@ -15,7 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "mrlonis",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
