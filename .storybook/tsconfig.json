@@ -1,10 +1,14 @@
 {
-  "extends": "../tsconfig.app.json",
+  "extends": "../projects/demo-genshin-impact-angular/tsconfig.app.json",
   "compilerOptions": {
     "types": ["node"],
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["../src/test.ts", "../src/**/*.spec.ts", "../projects/**/*.spec.ts"],
+  "exclude": [
+    "../projects/demo-genshin-impact-angular/src/test.ts",
+    "../projects/demo-genshin-impact-angular/src/**/*.spec.ts",
+    "../stories/**/*.spec.ts"
+  ],
   "include": ["../src/**/*", "../projects/**/*"],
   "files": ["./typings.d.ts"]
 }

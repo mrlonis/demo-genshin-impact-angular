@@ -13,21 +13,24 @@
           "strict": true
         }
       },
-      "root": "",
-      "sourceRoot": "src",
+      "root": "projects/demo-genshin-impact-angular",
+      "sourceRoot": "projects/demo-genshin-impact-angular/src",
       "prefix": "mrlonis",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/demo-genshin-impact-angular",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
+            "index": "projects/demo-genshin-impact-angular/src/index.html",
+            "main": "projects/demo-genshin-impact-angular/src/main.ts",
+            "polyfills": "projects/demo-genshin-impact-angular/src/polyfills.ts",
+            "tsConfig": "projects/demo-genshin-impact-angular/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "projects/demo-genshin-impact-angular/src/favicon.ico",
+              "projects/demo-genshin-impact-angular/src/assets"
+            ],
+            "styles": ["projects/demo-genshin-impact-angular/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -46,8 +49,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "projects/demo-genshin-impact-angular/src/environments/environment.ts",
+                  "with": "projects/demo-genshin-impact-angular/src/environments/environment.prod.ts"
                 }
               ],
               "outputPath": "dist/demo-genshin-impact-angular-prod",
@@ -95,26 +98,33 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
+            "main": "projects/demo-genshin-impact-angular/src/test.ts",
+            "polyfills": "projects/demo-genshin-impact-angular/src/polyfills.ts",
+            "tsConfig": "projects/demo-genshin-impact-angular/tsconfig.spec.json",
+            "karmaConfig": "projects/demo-genshin-impact-angular/karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "projects/demo-genshin-impact-angular/src/favicon.ico",
+              "projects/demo-genshin-impact-angular/src/assets"
+            ],
+            "styles": ["projects/demo-genshin-impact-angular/src/styles.scss"],
             "scripts": []
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "projects/demo-genshin-impact-angular/**/*.ts",
+              "projects/demo-genshin-impact-angular/**/*.html"
+            ]
           }
         },
         "storybook": {
           "builder": "@storybook/angular:start-storybook",
           "options": {
             "browserTarget": "demo-genshin-impact-angular:build:production",
+            "styles": ["projects/demo-genshin-impact-angular/src/styles/styles.scss"],
             "port": 6006
           }
         },
