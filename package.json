@@ -96,7 +96,7 @@
   "description": "This project is an example Angular project using Genshin Impact data",
   "repository": {
     "type": "git",
-    "url": "git@ssh.dev.azure.com:v3/zotecpartnersllc/Common%20Cloud%20Team/pkg-npm-ngx-shared"
+    "url": "https://github.com/mrlonis/demo-genshin-impact-angular"
   },
   "keywords": [
     "demo",
