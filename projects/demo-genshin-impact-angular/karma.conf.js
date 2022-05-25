@@ -32,14 +32,14 @@ module.exports = function (config) {
       suppressAll: true, // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/demo-genshin-impact-angular'),
+      dir: require('path').join(__dirname, '../../coverage/demo-genshin-impact-angular'),
       subdir: '.',
       reporters: [{ type: 'html' }, { type: 'text-summary' }, { type: 'cobertura' }],
       fixWebpackSourcePaths: true,
     },
     reporters: ['progress', 'kjhtml'],
     junitReporter: {
-      outputDir: './junit',
+      outputDir: '../../junit',
     },
     port: 9876,
     colors: true,
