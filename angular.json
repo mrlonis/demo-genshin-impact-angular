@@ -139,6 +139,7 @@
   },
   "defaultProject": "demo-genshin-impact-angular",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "defaultCollection": "@angular-eslint/schematics",
+    "analytics": "039231cf-c979-4c4a-8c36-e5afcf70b7ef"
   }
 }
